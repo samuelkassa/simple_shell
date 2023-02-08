@@ -1,5 +1,5 @@
 	C - Simple Shell
-This is our own shill like program which is inteded for the fullfillment of alx simple shell
+This is our own shell like program which is inteded for the fullfillment of alx simple shell
 project.
 
 From this task we got a better understanding of:

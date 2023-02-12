@@ -40,4 +40,4 @@ This file contains the details of all the individuals that contributed to this s
 
 ## Credits
 
-All codes are written by Samuyel Kasashun and Adisalem Fereja.
+All codes are written by Samuyel Kasahun and Adisalem Fereja.

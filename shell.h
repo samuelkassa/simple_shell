@@ -160,8 +160,8 @@ char *_strchr(char *, char);
 
 /* tokenizer.c */
 
-char **strlow(char *, char *);
-char **strlow2(char *, char);
+char **strtow(char *, char *);
+char **strtow2(char *, char);
 
 /* realloc.c */
 
@@ -206,7 +206,7 @@ void sigintHandler(int);
 /* geinfo.c */
 void clear_info(info_t *);
 void set_info(info_t *, char **);
-void free_info(info_t *, const char *);
+void free_info(info_t *, int);
 
 /* environ.c */
 char *_getenv(info_t *, const char *);

@@ -38,7 +38,7 @@ char **list_to_strings(list_t *head)
 	strs = malloc(sizeof(char *) * (len + 1));
 	if (!strs)
 		return (NULL);
-	for (len = 0; node; node = node->next, i++)
+	for (len = 0; node; node = node->next, len++)
 	{
 		str = malloc(_strlen(node->str) + 1);
 		if (!str)
@@ -51,7 +51,7 @@ char **list_to_strings(list_t *head)
 		str = _strcpy(str, node->str);
 		strs[len] = str;
 	}
-	strs[i] = NULL;
+	strs[len] = NULL;
 	return (strs);
 }
 
@@ -76,7 +76,7 @@ size_t print_list(const list_t *h)
 		h = h->next;
 		length++;
 	}
-	return (length)
+	return (length);
 }
 
 /**
@@ -89,7 +89,7 @@ size_t print_list(const list_t *h)
  * Return: The matching node or NULL
  */
 
-list_t *node_starts_with(list_t *node, char *prefix, char)
+list_t *node_starts_with(list_t *node, char *prefix, char c)
 {
 	char *indicator = NULL;
 

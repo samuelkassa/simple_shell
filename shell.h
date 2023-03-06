@@ -36,7 +36,10 @@
 
 #define HIST_FILE ".simple_shell_history"
 #define HIST_MAX 4096
-
+/* The variable environ points to an array of pointers to strings called
+ * the environment and this array of strings are made available to the proocess
+ * by the execve system call
+ */
 extern char **environ;
 
 /**
